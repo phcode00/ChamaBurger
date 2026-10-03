@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChamaBurger</title>
 </head>
+
 <body>
     <header class="cabecalho-site">
         <nav class="barra-navegacao">
@@ -27,11 +29,13 @@
             <div class="destaque-conteudo">
                 <div class="destaque-texto">
                     <h1>Burger de verdade,<br>na brasa</h1>
-                    <p>Pão brioche, carne 160g grelhada na hora e ingredientes fresquinhos — sem atalho, sem enrolação.</p>
+                    <p>Pão brioche, carne 160g grelhada na hora e ingredientes fresquinhos — sem atalho, sem enrolação.
+                    </p>
                     <a href="#cardapio" class="botao botao-primario">Ver cardápio</a>
                 </div>
                 <div class="destaque-imagem">
-                    <img src="assets/images/destaque-burger.jpg" alt="Hambúrguer artesanal com bacon, queijo e pão brioche, grelhado na brasa">
+                    <img src="assets/images/destaque-burger.jpg"
+                        alt="Hambúrguer artesanal com bacon, queijo e pão brioche, grelhado na brasa">
                 </div>
             </div>
         </section>
@@ -39,17 +43,149 @@
         <section class="cardapio" id="cardapio">
             <h2>Nosso Cardápio</h2>
             <div class="cardapio-itens">
+
                 <article class="cardapio-item">
                     <div class="cardaipo-item-imagem">
-                        <img src="assets/images/burger-classico.jpg" alt="Foto do burger Clássico: pão brioche, carne, tomate e queijo">
+                        <img src="assets/images/burger-classico.jpg"
+                            alt="Foto do burger Clássico: pão brioche, carne, tomate e queijo">
                     </div>
                     <h3>Clássico</h3>
                     <p>Pão brioche, carne 160g, queijo, alface e tomate.</p>
                     <span class="preco">R$ 24,90</span>
-                    <button class="adicionar-carrinho" data-name="Clássico" data-preco="24.90">Adicionar ao pedido</button>
+                    <button class="adicionar-carrinho" data-name="Clássico" data-preco="24.90">Adicionar ao
+                        pedido</button>
+                </article>
+
+                <article class="cardapio-item">
+                    <span class="selo">Mais pedido</span>
+                    <div class="cardaipo-item-imagem">
+                        <img src="assets/images/burger-bacon.jpg" alt="Foto do burger Bacon com fatias crocantes">
+                    </div>
+                    <h3>Bacon</h3>
+                    <p>Tudo do clássico + fatias generosas de bacon crocante.</p>
+                    <span class="preco">R$ 28,90</span>
+                    <button class="adicionar-carrinho" data-name="Bacon" data-preco="28.90">Adicionar ao pedido</button>
+                </article>
+
+                <article class="cardapio-item">
+                    <div class="cardaipo-item-imagem">
+                        <img src="assets/images/burger-veggie.jpg"
+                            alt="Foto do burger Veggie com grão-de-bico e salada">
+                    </div>
+                    <h3>Veggie</h3>
+                    <p>Hambúrguer de grão-de-bico, queijo, alface e cebola roxa.</p>
+                    <span class="preco">R$ 26,90</span>
+                    <button class="adicionar-carrinho" data-name="Veggie" data-preco="26.90">Adicionar ao
+                        pedido</button>
+                </article>
+
+                <article class="cardapio-item">
+                    <div class="cardaipo-item-imagem cardaipo-item-imagem-combo">
+                        <img src="assets/images/fritas.jpg" alt="Porção de fritas crocantes">
+                        <img src="assets/images/bebida.jpg" alt="Refrigerante gelado com gelo">
+                    </div>
+                    <h3>Combo Fritas + Refri</h3>
+                    <p>Fritas crocantes e um refrigerante gelado pra completar.</p>
+                    <span class="preco">R$ 12,90</span>
+                    <button class="adicionar-carrinho" data-name="Combo Fritas + Refri" data-preco="12.90">Adicionar ao
+                        pedido</button>
                 </article>
             </div>
         </section>
+
+        <!-- Sobre -->
+        <section class="sobre" id="sobre">
+            <div class="Sobre-imagem">
+                <img src="assets/images/sobre-burger.jpg" alt="Hambúrguer na brasa " width="800" height="500">
+            </div>
+
+            <div class="sobre-texto">
+                <span class="secao-rotulo">Nossa história</span>
+                <h2>Comida de boteco, com capricho de restaurante</h2>
+                <p>O Chama Burger começou numa churrasqueira de quintal, testando receitas com os
+                    amigos. Hoje, o método continua o mesmo: carne grelhada na brasa, pão fresco
+                    do dia e ingredientes comprados na feira — só que agora pra atender o bairro
+                    inteiro.
+                </p>
+                <a href="#cardapio" class="link-seta">Ver cardapio completo →</a>
+            </div>
+        </section>
+
+       <!-- Depoimentos -->
+        <section class="Depoimentos" id="Depoimentos">
+
+            <h2>Quem prova, volta</h2>
+            <div class="Depoimentos-lista">
+
+                <article class="Depoimento">
+                    <img src="assets/images/avatar-pedro.jpg" alt="foto de Pedro Costa" class="avatar">
+                    <p class="citacao">"Melhor bacon burger da região, sem exagero. O ponto da carne é sempre perfeito."</p>
+                    <p class="autor">Pedro Costa <span>- cliente frequente</span></p>
+                </article>
+
+                <article class="Depoimento">
+                    <img src="assets/images/avatar-marina.jpg" alt="foto de Marina Rocha" class="avatar">
+                    <p class="citacao">"O veggie surpreende até quem come carne. Peço toda semana com a galera do trabalho."</p>
+                    <p class="autor">Marina Rocha <span>- cliente frequente</span></p>
+                </article>
+
+                <article class="Depoimento">
+                    <img src="assets/images/avatar-thiago.jpg" alt="foto de Thiago Lima" class="avatar">
+                    <p class="citacao">"Pedi pro aniversário de 20 pessoas e todo mundo elogiou. Entrega rápida também."</p>
+                    <p class="autor">Thiago Lima <span>- cliente frequente</span></p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Reserva -->  
+        <section class="reserva" id="reserva">
+            <h2>Reserve sua mesa</h2>
+            <p>Prefere comer no salão? Deixe seus dados que confirmamos por telefone.</p>
+
+            <form class="reserva-formulario" id="reservaFormulario">
+
+                <div class="linha-formulario">
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                </div>
+
+                <div class="linha-formulario">
+                    <label for="telefone">Telefone</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" required>
+                </div>
+
+                <div class="linha-formulario">
+                    <label for="data">Data</label>
+                    <input type="date" id="data" name="data" required>
+                </div>
+
+                <div class="linha-formulario">
+                    <label for="pessoas">Número de pessoas</label>
+                    <select name="pessoas" id="pessoas">
+                        <option value="1">1 pessoa</option>
+                        <option value="2">2 pessoa</option>
+                        <option value="3">3 pessoa</option>
+                        <option value="4">4 pessoa</option>
+                        <option value="5+">5 ou mais</option>
+                    </select>
+                </div>
+
+                <div class="linha-formulario linha-formulario-completa">
+                    <label for="mensagem">Observação (opcional)</label>
+                    <textarea name="mensagem" id="mensagem" rows="3" placeholder="Alguma preferência ou restrição alimenta"></textarea>
+                </div>
+
+                <div class="linha-formulario linha-formulario-completa">
+                    <label for="foto">Foto de referência (opcional)</label>
+                    <input type="file" id="foto" name="foto" accept="image/*">
+
+                    <img id="fotoPrevia" class="foto-previa" alt="Prévia da imagem selecionada" hidden>
+                    <button type="submit" class="botao botao-primario formulario-enviar">Confimar reserva</button>
+                </div>
+
+            </form>
+        </section>
+
 
     </main>
 
