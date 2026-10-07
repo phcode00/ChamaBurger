@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ChamaBurger</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -111,7 +113,7 @@
             </div>
         </section>
 
-       <!-- Depoimentos -->
+        <!-- Depoimentos -->
         <section class="Depoimentos" id="Depoimentos">
 
             <h2>Quem prova, volta</h2>
@@ -119,25 +121,28 @@
 
                 <article class="Depoimento">
                     <img src="assets/images/avatar-pedro.jpg" alt="foto de Pedro Costa" class="avatar">
-                    <p class="citacao">"Melhor bacon burger da região, sem exagero. O ponto da carne é sempre perfeito."</p>
+                    <p class="citacao">"Melhor bacon burger da região, sem exagero. O ponto da carne é sempre perfeito."
+                    </p>
                     <p class="autor">Pedro Costa <span>- cliente frequente</span></p>
                 </article>
 
                 <article class="Depoimento">
                     <img src="assets/images/avatar-marina.jpg" alt="foto de Marina Rocha" class="avatar">
-                    <p class="citacao">"O veggie surpreende até quem come carne. Peço toda semana com a galera do trabalho."</p>
+                    <p class="citacao">"O veggie surpreende até quem come carne. Peço toda semana com a galera do
+                        trabalho."</p>
                     <p class="autor">Marina Rocha <span>- cliente frequente</span></p>
                 </article>
 
                 <article class="Depoimento">
                     <img src="assets/images/avatar-thiago.jpg" alt="foto de Thiago Lima" class="avatar">
-                    <p class="citacao">"Pedi pro aniversário de 20 pessoas e todo mundo elogiou. Entrega rápida também."</p>
+                    <p class="citacao">"Pedi pro aniversário de 20 pessoas e todo mundo elogiou. Entrega rápida também."
+                    </p>
                     <p class="autor">Thiago Lima <span>- cliente frequente</span></p>
                 </article>
             </div>
         </section>
 
-        <!-- Reserva -->  
+        <!-- Reserva -->
         <section class="reserva" id="reserva">
             <h2>Reserve sua mesa</h2>
             <p>Prefere comer no salão? Deixe seus dados que confirmamos por telefone.</p>
@@ -172,7 +177,8 @@
 
                 <div class="linha-formulario linha-formulario-completa">
                     <label for="mensagem">Observação (opcional)</label>
-                    <textarea name="mensagem" id="mensagem" rows="3" placeholder="Alguma preferência ou restrição alimenta"></textarea>
+                    <textarea name="mensagem" id="mensagem" rows="3"
+                        placeholder="Alguma preferência ou restrição alimenta"></textarea>
                 </div>
 
                 <div class="linha-formulario linha-formulario-completa">
@@ -183,11 +189,47 @@
                     <button type="submit" class="botao botao-primario formulario-enviar">Confimar reserva</button>
                 </div>
 
+
             </form>
+
+            <div class="reserva-confirmacao" id="reservaConfirmacao"></div>
+
         </section>
 
+        <!-- Final -->
 
+        <section class="chamada-final" id="pedir">
+            <h2>Bateu a fome</h2>
+            <p>
+                Peça pelo delivery ou venha comer no salão - abrimos todos os dias, das 18h à meia-noite
+            </p>
+            <a href="#" class="botao botao-destaque">Peça pelo WhatsApp</a>
+        </section>
     </main>
+
+    <footer class="rodape-site" id="contato">
+        <div class="rodape-info">
+            <p>&copy;2026 Chamar Burger - Rua das Brasas,123, São Caetano do Sul</p>
+            <p class="rodape-horario">Todos os dias, das 18h à meia-noite</p>
+        </div>
+
+        <ul class="rodape-links">
+            <li><a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a></li>
+            <li><a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i><span>WhatsApp</span></a></li>
+            <li><a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i><span>TikTok</span></a></li>
+            <li><a href="#" aria-label="Ver no mapa"><i class="fa-solid fa-location-dot"></i><span>Ver no mapa</span></a></li>
+        </ul>
+    </footer>
+
+    <div class="carrinho-resumo" id="carrinhoResumo">
+        <span class="carrinho-icone">🛒</span>
+        <span id="carrinhoContador">0</span> itens . <span id="carrinhoTotal">R$ 0,00
+
+
+
+        </span>
+    </div>
+
 
 </body>
 </html>
