@@ -11,7 +11,7 @@ body {
     padding: 40px;
 }
 
-h1{
+h1 {
     text-align: center;
     margin-bottom: 8px;
 }
@@ -48,7 +48,7 @@ h1{
     margin: 0 12px;
     padding: 6px 14px;
     color: #fff;
-    border-radius: 8px;    
+    border-radius: 8px;
 }
 
 .legenda .principal {
@@ -114,17 +114,39 @@ h1{
 }
 
 .container {
-    border: 4px dashed  #111;
+    border: 4px dashed #111;
     min-height: 320px;
     padding: 20px;
 
     display: flex;
 
     flex-direction: row;
-
     /* ↑ define o eixo principal (main axis):
- row -> itens em linha, da esquerda pra direita (padrão)
- row-reverse -> itens em linha, invertidos (6,5,4,3,2,1)
- column -> itens em coluna, de cima pra baixo
- column-reverse -> itens em coluna, invertidos*/
+    row -> itens em linha, da esquerda pra direita (padrão)
+    row-reverse -> itens em linha, invertidos (6,5,4,3,2,1)
+    column -> itens em coluna, de cima pra baixo
+    column-reverse -> itens em coluna, invertidos*/
+
+    flex-wrap: nowrap;
+    /* ↑ decide se os itens quebram linha quando não cabem:
+        nowrap -> tudo numa linha só, pode espremer ou estourar (padrão)
+        wrap   -> quebra linha quando não há espaço (use o botão "+ caixa") */
+
+    justify-content: flex-start;
+
+    align-items: stretch;
+
+    gap: 16px;
+}
+
+.box2 {
+    order: -1;
+}
+
+.box4 {
+    flex-grow: 1;
+}
+
+.box6 {
+    align-items: stretch;
 }
